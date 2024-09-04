@@ -1,11 +1,10 @@
-# Never Ending Netflix
+# Never Ending Anime
 
-[NEN](https://chrome.google.com/webstore/detail/hdadmgabliibighlbejhlglfjgplfmhb) is a chrome extension that improves the Netflix experience for power users. It's features include:
+[DEN](https://chrome.google.com/webstore/detail/hdadmgabliibighlbejhlglfjgplfmhb) is a chrome extension that improves the Crunchyroll experience for power users. It's features include:
 
 * Automatically skip intros
 * Automatically play the next episode
 * Skip the popups that ask if you're "Still here?" after 8 hours
-* Search *all* of Netflix's genre's
 
 ## Options
 
@@ -25,7 +24,6 @@ Note: I used Google Translate for all the translations. If there is anything wro
 
 ## Libraries & Credits
 
-* [Fuse.js](http://fusejs.io/) - Genre search
 * [gumby](https://gumbyframework.com/docs/javascript/) - Options page
 * [modernizr](https://modernizr.com/) - Options page
 * [jQuery](https://jquery.com/)

@@ -1,7 +1,7 @@
 body {
   width: 500px;
-  background-color: black;
-  color: #e8090b;
+  background-color: #22252a;
+  color: #d5d7db;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
@@ -11,8 +11,14 @@ body {
   display: none;
 }
 
+
+
+legend {
+  color: #ff640a;
+}
+
 a {
-  color: #e8090b;
+  color: #fab818;
 }
 
 #messages {
@@ -40,17 +46,18 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #3071a9;
+  background: #ff640a;
 }
 
 .footer {
   font-size: 75%;
   padding-bottom: 5px;
   display: inline;
+  color: #4a4e58;
 }
 
 .checkBackground {
-  background-color: black !important;
+  background-color: #22252a !important;
 }
 
 #results {
@@ -66,7 +73,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* optional: show position indicator in red */
 #results::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: #d5d7db;
 }
 
 .entry {
@@ -74,7 +81,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #genreSearch:focus {
-  color: #e8090b;
+  color: #d5d7db;
 }
 
 .lastField {
@@ -88,13 +95,13 @@ input[type=range]::-webkit-slider-runnable-track {
 #genreSearch {
   float: left;
   width: 100%;
-  background-color: black;
-  border: 1px solid #e8090b;
+  background-color: #22252a;
+  border: 1px solid #a0a0a0;
   padding: 5px;
   height: 30px;
   border-radius: 3px;
   outline: none;
-  color: #e8090b;
+  color: #a0a0a0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -106,11 +113,11 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .high-contrast {
   background-color: white !important;
-  color: black;
+  color: #a0a0a0;
 }
 
 .high-contrast a {
-  color: black !important;
+  color: #a0a0a0 !important;
 }
 
 
@@ -118,16 +125,16 @@ input[type=range]::-webkit-slider-runnable-track {
   float: left;
   width: 100%;
   background-color: white;
-  border: 1px solid #e8090b;
+  border: 1px solid #a0a0a0;
   padding: 5px;
   height: 30px;
   border-radius: 3px;
   outline: none;
-  color: black;
+  color: #a0a0a0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .high-contrast #genreSearch::placeholder {
-  color: #464646;
+  color: #4a4e58;
 }

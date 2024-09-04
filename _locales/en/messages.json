@@ -1,6 +1,6 @@
 {
   "manifest_name": {
-    "message": "Never Ending Netflix",
+    "message": "Never Ending Crunchyroll",
     "description": "The title of the application, displayed in the web store."
   },
   "manifest_description": {
@@ -21,7 +21,7 @@
   },
   "hideAutoPlayVid": {
     "message": "Hide Auto Playing Promoted Videos",
-    "description": "Text for the hide auto playing promoted video on netflix home page option"
+    "description": "Text for the hide auto playing promoted video on Crunchyroll home page option"
   },
   "dontPromptStillWatching": {
     "message": "Don't Prompt \"Are you still watching?\"",

@@ -14,18 +14,18 @@ $(() => {
         $("#chkTitleSequence").prop('checked', options.skipTitleSequence);
         $("#chkPromptStillHere").prop('checked', options.skipStillHere);
         $("#chkPlayNext").prop('checked', options.autoPlayNext);
-        $("#chkWatchCredits").prop('checked', options.watchCredits);
-        $("#chkDontMinimzeEndCreditsOfShow").prop('checked', options.dontMinimzeEndCreditsOfShow);
-        $("#chkDisAutoPlayInBrowse").prop('checked', options.disableAutoPlayOnBrowse);
-        $("#chkHideDownvoted").prop('checked', options.hideDisliked);
+        // $("#chkWatchCredits").prop('checked', options.watchCredits);
+        // $("#chkDontMinimzeEndCreditsOfShow").prop('checked', options.dontMinimzeEndCreditsOfShow);
+        // $("#chkDisAutoPlayInBrowse").prop('checked', options.disableAutoPlayOnBrowse);
+        // $("#chkHideDownvoted").prop('checked', options.hideDisliked);
 
-        if (options.highContrast) {
-            $("#contrast").text("Normal Contrast Mode");
-            $("#contrast").attr('data-value', "high");
-        } else {
-            $("#contrast").text("High Contrast Mode");
-            $("#contrast").attr('data-value', "low");
-        }
+        // if (options.highContrast) {
+        //     $("#contrast").text("Normal Contrast Mode");
+        //     $("#contrast").attr('data-value', "high");
+        // } else {
+        //     $("#contrast").text("High Contrast Mode");
+        //     $("#contrast").attr('data-value', "low");
+        // }
 
         // Trigger gumby update to show visual changes
         $('input:checked').trigger('gumby.check');
@@ -34,10 +34,10 @@ $(() => {
             changeOption(this);
         });
 
-        reloadSearchLibrary();
-        searchOnTypingListener();
-        registerContrastModeHandler();
-        setContrastMode();
+        // reloadSearchLibrary();
+        // searchOnTypingListener();
+        // registerContrastModeHandler();
+        // setContrastMode();
     });
 });
 

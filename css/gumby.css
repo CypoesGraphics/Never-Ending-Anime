@@ -91,7 +91,7 @@ body {
     background: white;
     font-family: "Open Sans";
     font-weight: 400;
-    color: #555555;
+    color: #4a4e58;
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1581,7 +1581,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans";
     font-weight: 300;
-    color: #444444;
+    color: #a0a0a0;
     text-rendering: optimizeLegibility;
     padding-top: 0.273em;
     line-height: 1.15538em;
@@ -1589,7 +1589,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #d04526;
+    color: #a0a0a0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1686,14 +1686,14 @@ p.lead {
 }
 
 a {
-    color: #d04526;
+    color: #a0a0a0;
     text-decoration: none;
     outline: 0;
     line-height: inherit;
 }
 
 a:hover {
-    color: #c03d20;
+    color: #a0a0a0;
 }
 
 /*=====================================================
@@ -5029,7 +5029,7 @@ form fieldset {
     border-width: 0.0625em;
     padding-right: 1.5625em;
     padding-left: 1.5625em;
-    border-color: #B9090B;
+    border-color: #ff640a;
     margin: 10px 0;
 }
 
