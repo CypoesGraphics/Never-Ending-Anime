@@ -84,28 +84,44 @@ function startMonitoringForSelectors(selectors, numTries) {
     //   disableAutoPreview();
     // }
   });
-  
+
+  let reactEntry = undefined;
 
   $( document ).ready(function() {
-    let iframe = $("#content").find(".video-player")
-    let reactEntry = undefined
-    if (iframe.length > 0) {
-      console.log("NEA - iframe")
-      console.log(iframe.get(0))
-      let content = iframe.get(0).documentContent.body
-      console.log("NEA - content")
-      console.log(content)
-      if (content.length > 0) {
-        console.log("NEA - reactEntry")
-        console.log(content.get(0))
-        reactEntry = content.get(0)
-      }
-    }
+    console.log("NEA");
+    reactEntry = document.getElementById("vilos");
+    console.log(reactEntry);
+    // let iframe = $("#content .video-player");
+    // if (iframe) {
+    //   console.log("NEA - iframe");
+    //   console.log(iframe.get(0));
+    //   $( iframe.get(0).contentWindow ).ready(function() {
+    //     console.log("NEA - iframe loaded");
+    //     console.log( iframe.get(0).contentWindow.getElementById("vilos") );
+
+    //     let iFrameDOM = iframe.contents();
+    //     if (iFrameDOM.find("#vilos")) {
+    //       reactEntry = iFrameDOM.find("#vilos");
+    //     }
+    //   })
+
+
+      // let content = $(iframe).contentWindow.document.getElementById("vilos")
+      // console.log("NEA - content")
+      // console.log(content)
+      // if (content.length > 0) {
+      //   console.log("NEA - reactEntry")
+      //   console.log(content.get(0))
+      //   reactEntry = content.get(0)
+      // }
+    // }
+    
+    // reactEntry = document.getElementById("content");
     if (reactEntry) {
       console.log("NEA - HAS ENTRY")
       /*Start monitoring at react's entry point*/
       monitor.observe(reactEntry, {
-        attributes: true, // Don't monitor attribute changes
+        attributes: false, // Don't monitor attribute changes
         childList: true, //Monitor direct child elements (anything observable) changes
         subtree: true // Monitor all descendants
       });
@@ -119,6 +135,29 @@ function startMonitoringForSelectors(selectors, numTries) {
       }, 500 * numTries);
     }
   });
+    
+  // $( document ).ready(function() {
+  //   let iframe = $("#content").find(".video-player")
+  //   let reactEntry = undefined
+  //   if (iframe.length > 0) {
+  //     console.log("NEA - iframe")
+  //     console.log(iframe)
+  //     console.log(iframe.get(0))
+  //     iframe.bind("load", function() {
+  //       console.log("NEA - iframe loaded");
+  //     })
+  //     console.log(iframe.get(0).find("#vilos"))
+  //     let content = $(iframe).contentWindow.document.getElementById("vilos")
+  //     console.log("NEA - content")
+  //     console.log(content)
+  //     if (content.length > 0) {
+  //       console.log("NEA - reactEntry")
+  //       console.log(content.get(0))
+  //       reactEntry = content.get(0)
+  //     }
+  //   }
+    
+  // });
   
 }
 
